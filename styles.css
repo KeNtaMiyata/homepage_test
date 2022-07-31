@@ -43,11 +43,44 @@ h2{
     font-weight: bold;
     font-size: 26px;
 }
-.sidebar{
 
+.sidebar_bg{
+    background:rgba(173,181,189,0.5);
 }
 
-.side_title{
+.side_nav{
 
+    background-color:  #f8f9fa;
+    border: solid #878787; 
+    border-top-width: 0px;      
+    border-right-width: 0px;       
+    border-bottom-width: 5px;
+    border-left-width: 0px;
+}
+
+
+.sidebar_title{
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #333;
+    background-color:  #f8f9fa;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0;
+    padding:10px 0;
+}
+
+.sidebar_title:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) skew(-25deg);
+    height: 20px;
+    width: 10px;
+    border-right: 3px solid #333;
+    background-color: #f8f9fa;
+    content: "";
 }
 
