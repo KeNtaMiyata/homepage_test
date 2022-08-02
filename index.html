@@ -54,8 +54,8 @@
             <div class="container">
                 <div class="row">
                     <div class="d-none d-lg-block col-2 sidebar_bg">
+                        <div class="profile_img my-2 mx-2" onmouseover="over(this)" onmouseleave="leave(this)"></div>
                         <h2 class="sidebar_title">Menu</h2>
-                        <p>img</p>
                         <nav>
                             <ul class="nav flex-column">
                                 <li class="nav-item side_nav mb-2 "><a href="intro.html" class="nav-link text-dark"><i class="fas fa-angle-right"></i> Intro</a></li>
@@ -87,7 +87,14 @@
             <p>Copyright (C) 2022 Miyata Kenta All Rights Reserved.</p>
         </footer>
 
-
-        <!-- <script type="text/javascript" src=""></script> -->
+        <script type="text/javascript">
+            function over(profile) {
+                profile.style.backgroundImage = "url(./img/profile2.jpg)";
+            }
+         
+            function leave(profile) {
+                profile.style.backgroundImage = "url(./img/profile1.jpg)";
+            }
+        </script>
     </body>
 </html>

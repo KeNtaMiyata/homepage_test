@@ -44,6 +44,13 @@ h2{
     font-size: 26px;
 }
 
+.profile_img{
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    background-image: url(./img/profile1.jpg);
+    background-size:contain;  
+}
+
 .sidebar_bg{
     background:rgba(173,181,189,0.5);
 }

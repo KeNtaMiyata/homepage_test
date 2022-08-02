@@ -1,1 +1,100 @@
-Link
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+
+    <body class="bg-light">
+
+        <header>
+            <nav class="nav-bar navbar-light bg-secondary ">
+                <div class="container-fluid">
+                    <p class="text-light text-end">Kenta Miyata's Website</p>
+                </div>
+            </nav>  
+            
+            <nav class="nav-bar navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-9 mx-auto">
+                            <a class="navbar-brand" href="index.html">Kenta Miyata</a>
+                        </div>
+                        <div class="col-2 mx-auto text-end">
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>    
+                </div>
+            </nav>
+            
+            <nav class="nav-bar navbar-expand-lg navbar-light bg-secondary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav px-3">
+                            <li class="nav-item mx-2"><a class ="nav-link text-light" href="index.html">Home</a></li>
+                            <li class="nav-itemk mx-2"><a class ="nav-link text-light" href="intro.html">Intro</a></li>
+                            <li class="nav-item mx-2"><a class ="nav-link text-light" href="vitae.html">Vitae</a></li>
+                            <li class="nav-item mx-2"><a class ="nav-link text-light" href="link.html">Link</a></li>
+                            <li class="nav-item mx-2"><a class ="nav-link text-light" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-lg-block col-2 sidebar_bg">
+                        <div class="profile_img my-2 mx-2" onmouseover="over(this)" onmouseleave="leave(this)"></div>
+                        <h2 class="sidebar_title">Menu</h2>
+                        <nav>
+                            <ul class="nav flex-column">
+                                <li class="nav-item side_nav mb-2 "><a href="intro.html" class="nav-link text-dark"><i class="fas fa-angle-right"></i> Intro</a></li>
+                                <li class="nav-item side_nav mb-2"><a href="vitae.html" class="nav-link text-dark"><i class="fas fa-angle-right"></i> Vitae</a></li>
+                                <li class="nav-item side_nav mb-2"><a href="link.html" class="nav-link text-dark"><i class="fas fa-angle-right"></i> Link</a></li>
+                                <li class="nav-item side_nav mb-2"><a href="contact.html" class="nav-link text-dark"><i class="fas fa-angle-right"></i> Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <h2 class="sidebar_title">Abstract</h2>
+                        <div class="mt-4 px-1" style="background-color:  #f8f9fa;">
+                            <p>Kenta Miyata</p>
+                            <p>Student of University of Tsukuba</p>
+                            <p>Senior in college</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-8 offset-md-1">
+                        <h2 class="main_title">Link to my website</h2>
+                        
+                        <h2 class="main_title">News</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Copyright (C) 2022 Miyata Kenta All Rights Reserved.</p>
+        </footer>
+
+        <script type="text/javascript">
+            function over(profile) {
+                profile.style.backgroundImage = "url(./img/profile2.jpg)";
+            }
+         
+            function leave(profile) {
+                profile.style.backgroundImage = "url(./img/profile1.jpg)";
+            }
+        </script>
+    </body>
+</html>
